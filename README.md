@@ -10,7 +10,7 @@ Open cmd and install arbd1 package
    
     pip install arbdlib
 
-Now download this repository and open the folder arbd-lib/ArduinoFirmata.
+Now download this repository and open the folder arbd-lib/ArduinoFirmata.<br/>
 Double click on ArduinoDirmata.ino file and upload this to your ARBD1 through Arduino IDE.
 
 ## Creating Object of Arbd1
