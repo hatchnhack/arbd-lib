@@ -10,7 +10,7 @@ Buy Link - https://www.hnhcart.com/products/arbd-1
 Some text
 
 ## Creating Object of Arbd1
-    from ArBd import Arbd1
+    from Arbd import arbd1
     board=Arbd1(COM)
     # accepts string values for COM PORT 
     # e.g. board=Arbd1('COM3')
@@ -79,7 +79,7 @@ Some text
  
 Printing Pressed Navigation Switch 
 
-     from ArBd import Arbd1
+     from Arbd import arbd1
      
      board=Arbd1('COM3')
      board.navigation_switches_delay=1
@@ -98,7 +98,7 @@ Printing Pressed Navigation Switch
 
 Turning On and Off Red RGB Led
 
-    from ArBd import Arbd1
+    from Arbd import arbd1
     
     board=Arbd1('COM3')
     board.rgb_digital(1,0,0)
@@ -107,7 +107,7 @@ Turning On and Off Red RGB Led
  
  Printing ldr values
  
-    from ArBd import Arbd1
+    from Arbd import arbd1
     
     board=Arbd1('COM3')
     while 1:
@@ -115,14 +115,14 @@ Turning On and Off Red RGB Led
  
  Getting Real Time Potentiometer Values
      
-    from ArBd import Arbd1
+    from Arbd import arbd1
     
     board=Arbd1('COM3')
     while 1:
       print(board.potentiometer()) 
  Getting Temperature and Humidity Values 
  
-    from ArBd import Arbd1
+    from Arbd import arbd1
     
     board=Arbd1('COM3')
     while 1:
@@ -133,7 +133,7 @@ Turning On and Off Red RGB Led
       
   Turning On and Off Buzzer
 
-    from ArBd import Arbd1
+    from Arbd import arbd1
     
     board=Arbd1('COM3')
     board.buzzer(1)
@@ -142,7 +142,7 @@ Turning On and Off Red RGB Led
     
   Using Charlieplexing
   
-    from ArBd import Arbd1
+    from Arbd import arbd1
     
     board=Arbd1('COM3')
     board.charlieplexing('Z','Z','L','H') # turns on 1st LED
