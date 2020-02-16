@@ -6,8 +6,12 @@ ARBD1 Documentation - https://arbd1.hatchnhack.com/<br/>
 Buy Link - https://www.hnhcart.com/products/arbd-1
 
 ## Installing Arbd1 Library and uploading firmata firmware to Arbd1
-open cmd and install arbd1 package
-   pip install arbd1
+Open cmd and install arbd1 package
+   
+    pip install arbdlib
+
+Now download this repository and open the folder arbd-lib/ArduinoFirmata.
+Double click on ArduinoDirmata.ino file and upload this to your ARBD1 through Arduino IDE.
 
 ## Creating Object of Arbd1
     from Arbd import arbd1
