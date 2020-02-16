@@ -6,7 +6,8 @@ ARBD1 Documentation - https://arbd1.hatchnhack.com/<br/>
 Buy Link - https://www.hnhcart.com/products/arbd-1
 
 ## Installing Arbd1 Library and uploading firmata firmware to Arbd1
-pip install arbd1
+open cmd and install arbd1 package
+   pip install arbd1
 
 ## Creating Object of Arbd1
     from Arbd import arbd1
