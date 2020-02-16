@@ -34,11 +34,11 @@ class arbd1:
         self.board.get_pin('a:3:o')
         self.board.get_pin('a:4:o')
         # delays
-        self.potentiometer_delay = 0
-        self.ldr_delay = 0
+        self.potentiometer_delay = 0.1
+        self.ldr_delay = 0.1
         self.dht_delay = 0.1
         self.navigation_switches_delay = 0.01
-
+        print('*** CONNECTION ESTABLISHED ***')
     # Enter one or zero to turn off and turn on Rgb led
     def rgb_digital(self, r, g, b):
         self.board.digital[9].write(g)
