@@ -465,7 +465,7 @@ void sysexCallback(byte command, byte argc, byte *argv)
 
   switch (command) {
 
-    case 0x02: // Command to receive Temperature and Humidity Value
+    case 0x02: // @GhostRiderSK- Command to receive Temperature and Humidity Value
         {
           int h = dht.readHumidity();
           int t = dht.readTemperature();
@@ -481,7 +481,7 @@ void sysexCallback(byte command, byte argc, byte *argv)
         }
         break;
     
-    case 0x01: // Command For Charlie plexing ARBD 1
+    case 0x01: // @GhostRiderSK- Command For Charlie plexing ARBD 1
     {
       
         switch(argv[0])
@@ -587,23 +587,7 @@ void sysexCallback(byte command, byte argc, byte *argv)
         break;
         
     }
-//    case 0x02:
-//    {
-//        pinMode(A2,INPUT);
-//        pinMode(A3,OUTPUT);
-//        pinMode(A4,INPUT);
-//        pinMode(A5,OUTPUT);
-//        digitalWrite(A3,LOW);
-//        digitalWrite(A5,HIGH);
-//        break;
-//      
-//    }
-//
-//    case 0x03:
-//    {
-//      digitalWrite(11,HIGH)    ;
-//      break;
-//    }
+
   
     case I2C_REQUEST:
       mode = argv[1] & I2C_READ_WRITE_MODE_MASK;
