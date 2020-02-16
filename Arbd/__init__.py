@@ -2,7 +2,7 @@ from pyfirmata import ArduinoNano, util
 import time
 import serial
 
-class Arbd1:
+class arbd1:
     @staticmethod
     def getPorts():
         ports = list(serial.tools.list_ports.comports())
